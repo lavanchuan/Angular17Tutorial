@@ -1,0 +1,27 @@
+<h1>Dog page</h1>
+
+<div class="container">
+    <div class="content">
+
+        <div class="dog">
+            <button (click)="getDog()">Get Dog</button>
+            <div class="card">
+                <h1>Size: {{currentDog?.fileSizeBytes}}</h1>
+                <img src="{{currentDog?.url}}" alt="" width="100%"/>
+            </div>
+        </div>
+
+        <div class="dogs">
+            <p>Size dogs: <input type="number" name="" id="" 
+                placeholder="Size" 
+                [(ngModel)]="size"></p>
+            <button (click)="getDogs()">Get Dogs</button>
+            <div>
+                <div class="card" *ngFor="let dog of dogs">
+                    <h1>Size: {{dog?.fileSizeBytes}}</h1>
+                    <img src="{{dog?.url}}" alt="" width="100%"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
