@@ -1,0 +1,14 @@
+<p>class-binding works!</p>
+<select name="" id="" [(ngModel)]="color">
+    <option value="blue">Blue</option>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+</select>
+<p><input type="text" name="" id="" placeholder="Name" [(ngModel)]="name"/></p>
+<p>Class binding <span [style.color]="color">{{name}}</span></p>
+
+<p [class]="{'text25' : true, 'textCyan': true}">{{name}}</p>
+
+<p [class]="{'text15' : true, 'textRed': true}">{{name}}</p>
+
+<p [class]="{'text20' : true, 'textBlack': true}">{{name}}</p>

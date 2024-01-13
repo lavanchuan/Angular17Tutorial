@@ -1,0 +1,16 @@
+<p>ng-for works!</p>
+
+<div class="container1">
+    <ul>
+        <li *ngFor="let movie of movies; even as e;" style="display: block;">
+        <div *ngIf="e">{{movie.name}}</div>
+        </li>
+    </ul>
+</div>
+
+<div class="container2">
+    <h1>Container 2</h1>
+    <ng-template ngFor let-movie [ngForOf]="movies" let-e="even">
+        <li *ngIf="!e">{{movie.name}}</li>
+    </ng-template>
+</div>
