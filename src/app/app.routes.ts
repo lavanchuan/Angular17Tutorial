@@ -6,6 +6,7 @@ import { NgForComponent } from './components/directive/structural/ng-for/ng-for.
 import { DogComponent } from './components/dog/dog.component';
 import { HomeComponent } from './components/home/home.component';
 import { PipeDateComponent } from './components/pipe/pipe-date/pipe-date.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 
 export const routes: Routes = [
   {path: "", component: HomeComponent},
@@ -15,5 +16,6 @@ export const routes: Routes = [
   {path: "ng-for", component: NgForComponent},
   {path: "component-life-cycle", component:ComponentLifeCycleComponent},
   {path: "class-binding", component: ClassBindingComponent},
-  {path: "pipe-date", component:PipeDateComponent}
+  {path: "pipe-date", component:PipeDateComponent},
+  {path: "product-list", component: ProductListComponent}
 ];
